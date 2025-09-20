@@ -1,9 +1,6 @@
 name: 02 - Workflow Events
 
 on:
-    push:
-        branches:
-            - "main"
     pull_request:
     # schedule:
     #     - cron: "0 0 * * *" # everyday at 12AM
