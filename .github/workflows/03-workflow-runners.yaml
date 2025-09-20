@@ -8,5 +8,13 @@ jobs:
         steps:
             - name: Show OS
               run: |
-                  echo "This job is running on an ubuntu runner"
-                  echo "Runner OS: $RUNNER_OS"
+                echo "This job is running on an ubuntu runner"
+                echo "Runner OS: $RUNNER_OS"
+    windows-echo:
+        runs-on: wiwndows-latest
+        steps:
+            - name: Show Windows
+              shell: bash  # informs GH to use bash shell for RUNNER_OS Command
+              run: |
+                echo "This job is running from Windows OS"
+                echo: "Runner OS: $RUNNER_OS"
