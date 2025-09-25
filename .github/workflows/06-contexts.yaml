@@ -40,3 +40,10 @@ jobs:
               run: |
                   echo "Workflow env: ${{ env.MY_WORKFLOW_VAR }}"
                   echo "Workflow env: ${{ env.MY_OVERWRITTEN_VAR }}"
+    echo-data2:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Print Env Variables # traditional bash syntax for env vars
+              run: |
+                  echo "Workflow env: $MY_WORKFLOW_VAR"
+                  echo "Workflow env: $MY_OVERWRITTEN_VAR"
